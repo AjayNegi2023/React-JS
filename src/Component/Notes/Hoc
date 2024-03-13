@@ -1,0 +1,28 @@
+Higher-order components (HOCs) are a powerful feature of the React library. They allow us to reuse component logic across multiple components.
+
+In React, a higher-order component is a pattern where a function  that takes a component as an argument and returns a new component that wraps the original component.
+
+## Benefits of Using Higher-Order Components in React
+# Reusability: HOCs allow you to reuse component logic across multiple components, which can save time and reduce code duplication.
+# Flexibility: HOCs can take additional arguments, which allows you to customize the behavior of the HOC. This makes them a flexible way to add functionality to your components.
+
+Synatx :
+const NewComponent = HOC(OriginalComponent);
+-> const CaptainCool = withCaptaincy(Dhoni);
+
+example : 
+const HOC = (OriginalComponent) => {
+class NewComponent extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      count: 0,
+    };
+  }
+
+  increment = () => {
+    this.setState((prevState) => ({
+      count: prevState.count + 1
+    }));
+  };

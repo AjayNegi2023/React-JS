@@ -1,0 +1,5 @@
+Pure Component is only applicable for Class Base Component.
+In Order to achieve same thing using function Component we can achieve using React.memo();
+
+Syntax :
+export default React.memo(FunctionComponent_Name);

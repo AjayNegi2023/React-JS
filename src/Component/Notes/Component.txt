@@ -1,0 +1,11 @@
+In React, components are the building blocks of a user interface. They represent different parts of the UI and can be reused throughout the application. React components can be categorized into two main types: Functional Components and Class Components.
+
+## Class Components:
+
+Traditional class-based components, which were the primary way of creating components before the introduction of Hooks.
+Can have state, lifecycle methods, and more complex logic.
+
+
+## Function Components: This is the simplest way to create a component. Those are pure JavaScript functions that accept props object as the first parameter and return React elements to render the output:
+
+

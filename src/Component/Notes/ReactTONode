@@ -1,0 +1,13 @@
+1) To convert any object to String use JSON.stringify() method
+2) HTML default property : whenever we submit a form then page will reload . So use preventDefault() to avoid it 
+3) React js Single Page 
+4) CORS
+5) When we send data using fetch like this  
+const response =  await fetch('http://localhost:8080/',{
+      method : 'POST',
+      body:form
+    });
+ then fetch try to send the body as it is in our case form is an object so it send as object 
+ but in body we need to send data as string so convert the form to string 
+
+ In DEV mode data comes 2 time beacause of Testing Purpose

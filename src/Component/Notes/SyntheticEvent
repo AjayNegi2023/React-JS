@@ -1,0 +1,4 @@
+Synthetic Events
+The term "synthetic" implies that these events are not directly the native events provided by the browser but are React's abstraction over them. 
+Synthetic events in React are cross-browser wrappers around the browser’s original event. Different browsers may have different names for the events. They create a uniform interface that React uses to ensure that events execute consistently across browsers. React normalizes this information to provide a consistent API for handling events regardless of the browser.
+

@@ -1,0 +1,12 @@
+PureComponent implements shouldComponentUpdate with shallow comparision with previous props and state to current props and state. if there is no difference then component will not re-render other wise component re-renderd.
+
+
+Example->
+In Parent.jsx we call two component PureComponentReact and RegularComponent
+We create a state name 
+then change the state at componentDidMount using setInterval. after every 2 second setInterval chnage the name : Aman to Aman 
+when we pass the state name to both component as props then PureComponent first render and second time it will not re-renderd. since there is no chnage state bcz previous value is Aman and current value is also Aman.
+
+But in Regular Component it will re- render after every two second because it does implement shouldComponentUpdate() lifeCycle Method.  and it treat state change but state value actually not chnaged. 
+
+
