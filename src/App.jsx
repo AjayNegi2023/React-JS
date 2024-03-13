@@ -11,7 +11,7 @@ import RenderApp from "./Component/Render/RenderApp";
 import StateManagement from "./Component/State";
 import StateCounter from "./Component/StateCounter";
 import SyntheticsEvent from "./Component/SyntheticEvent/SyntheticEvent";
-import MemoApp from "./Component/Hooks/Memo/MemoApp";
+import MemoApp from "./Component/Hooks/PerformanceOptimization/CLassMemo/MemoApp";
 export default function App() {
   return (
     <main>
@@ -19,7 +19,7 @@ export default function App() {
       {/* <StateManagement /> */}
       {/* <StateCounter /> */}
 
-      <MainREF />
+      {/* <MainREF /> */}
       {/* <ClickCounter/> */}
       {/* <HoverCounter/> */}
       {/* <RenderApp /> */}
@@ -30,7 +30,7 @@ export default function App() {
       {/* <Parent /> */}
       {/* <MemoApp /> */}
       {/********** Hooks**********/}
-      {/* <HookMain /> */}
+      <HookMain />
     </main>
   );
 }
